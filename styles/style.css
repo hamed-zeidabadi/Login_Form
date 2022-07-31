@@ -1,0 +1,179 @@
+/* font-face */
+@font-face {
+  font-family: Fredoka-Bold;
+  src: url("../assets//fonts/Fredoka/Fredoka-Bold.ttf");
+}
+@font-face {
+  font-family: Fredoka;
+  src: url("../assets//fonts/Fredoka/Fredoka-Regular.ttf");
+}
+
+/* Reset CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  all: unset;
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input:focus {
+  outline: none;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+/* Style Home Page */
+body {
+  direction: ltr;
+  font-size: 1.125rem;
+  font-family: Fredoka, sans-serif;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.container {
+  width: 450px;
+  height: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 95px auto 10px auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 5px auto;
+}
+.header img {
+  width: 170px;
+  height: 170px;
+}
+.header p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Fredoka-Bold, sans-serif;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+.header p span {
+  color: #0aa1dd;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto auto auto;
+}
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.login input[type="email"] {
+  display: block;
+  width: 300px;
+  padding: 9px;
+  border-radius: 5px;
+  font-family: Fredoka, sans-serif;
+  font-size: 1rem;
+  margin: 6px 1px;
+}
+.login input[type="password"] {
+  display: block;
+  width: 300px;
+  padding: 9px;
+  border-radius: 5px;
+  font-family: Fredoka, sans-serif;
+  margin: 6px 1px;
+  font-size: 1rem;
+}
+.login input[type="submit"] {
+  display: block;
+  margin: 10px auto auto auto;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-family: Fredoka, sans-serif;
+  margin: 25px auto 25px auto;
+  text-align: center;
+  border: 1px solid none;
+  border-radius: 5px;
+  background-color: #0aa1dd;
+  cursor: pointer;
+  font-family: Fredoka-Bold, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pop {
+  display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pop:hover {
+  animation-name: pop;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.login a {
+  margin: -15px auto auto auto;
+}
+.login a:hover {
+  color: #0aa1dd;
+}
+
+.login a,
+.footer a {
+  color: gray;
+  font-size: 0.8rem;
+  padding: 2px;
+}
+.login a:hover,
+.footer a:hover {
+  color: black;
+}
+
+.footer {
+  margin: 20px auto auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  margin: 10px auto auto auto;
+  font-family: Fredoka, sans-serif;
+}
+
+.footer a {
+  margin: 5px auto 10px auto;
+}
+.footer a:hover {
+  color: #0aa1dd;
+}
